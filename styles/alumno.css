@@ -1,0 +1,169 @@
+.alumno-item {
+    width: 348px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+    background-color: #D9D9D9;
+    color: #231F20;
+}
+
+.botones-contenedor {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.btn-asistencia {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc; /* gris inicial */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.btn-asistencia:hover {
+    background-color: #bbb; /* gris más oscuro al hover */
+}
+
+/* Estado PRESENTE */
+.btn-asistencia.presente {
+    background-color: #537D5D; /* verde */
+}
+
+/* Estado AUSENTE */
+.btn-asistencia.ausente {
+    background-color: #D9534F; /* rojo */
+}
+
+.btn-asistencia.sin-borde {
+    background-color: #fff;
+}
+
+.btn-uniforme {
+    width: 30px;
+    height: 30px;
+    background-color: #9EBC8A;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-msj {
+    width: 30px;
+    height: 30px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-msj-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-alumno {
+    width: 200px;
+    height: 50px;
+    background-color: #537D5D;
+    color: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+    margin-left: auto;
+    display: block;
+}
+
+.alumnos-listado {
+    margin-top: 70px;
+}
+
+/* Botones masivos */
+.botones-masivos {
+    display: flex;
+    gap: 12px;
+    margin-right: 20px;
+    justify-content: flex-end;
+}
+
+.btn-masivo {
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #1976d2;
+    color: white;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.25s ease, box-shadow 0.25s ease;
+    user-select: none;
+}
+
+.btn-masivo:hover,
+.btn-masivo:focus {
+    background-color: #155a9c;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    outline: none;
+}
+
+.btn-masivo:active {
+    background-color: #0f3d66;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transform: scale(0.95);
+}
+
+.btn-asistencia-todos {
+    background-color: #4caf50;
+}
+
+.btn-asistencia-todos:hover {
+    background-color: red;
+}
+
+.btn-correo-masivo {
+    background-color: #fff;
+}
+
+.btn-correo-masivo:hover {
+    background-color: blue;
+}
+
+.btn-eliminar {
+    margin-left: 10px;
+    background-color: #e53935;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+.btn-eliminar:hover {
+    background-color: #b71c1c;
+}
